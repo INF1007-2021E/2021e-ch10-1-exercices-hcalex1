@@ -1,0 +1,27 @@
+test_closest (__main__.TestExercice) ... FAIL
+test_coordinates (__main__.TestExercice) ... ERROR
+test_linear_values (__main__.TestExercice) ... ok
+
+======================================================================
+ERROR: test_coordinates (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 26, in test_coordinates
+    output = exercice.coordinate_conversion(cartesian_coordinates)
+  File "/home/runner/work/2021e-ch10-1-exercices-hcalex1/2021e-ch10-1-exercices-hcalex1/exercice.py", line 19, in coordinate_conversion
+    return np.concatenate([angles, radius], axis=1)
+  File "<__array_function__ internals>", line 5, in concatenate
+numpy.AxisError: axis 1 is out of bounds for array of dimension 1
+
+======================================================================
+FAIL: test_closest (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 42, in test_closest
+    self.assertEqual(
+AssertionError: 0 != 3 : Erreur dans le remplacement de caractère
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1, errors=1)
